@@ -50,16 +50,6 @@
 #include "../platsmp.h"
 #include <mach/board_lge.h>
 
-#if defined(CONFIG_LCD_KCAL)
-/*             
-                          
-                                
-*/
-#include <linux/module.h>
-#include "../../../../drivers/video/msm/mdss/mdss_fb.h"
-extern int update_preset_lcdc_lut(void);
-#endif /* CONFIG_LCD_KCAL */
-
 static struct memtype_reserve msm8974_reserve_table[] __initdata = {
 	[MEMTYPE_SMI] = {
 	},
